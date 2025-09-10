@@ -1,0 +1,231 @@
+:root {
+  --green-dark: #014421;
+  --green-light: #90ee90;
+  --font-main: 'Cairo', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  background: #f0f8f0;
+  color: var(--green-dark);
+  line-height: 1.6;
+  direction: ltr;
+}
+main{
+    margin-top: 40px;
+   
+}
+
+header {
+  background: var(--green-dark);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+header h1 {
+  font-size: 2rem;
+}
+header h1 span {
+  color: var(--green-light);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--green-light);
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+
+  background: url("../images/background.jpeg") center/cover no-repeat;
+  padding: 4rem 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-align: center;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+
+}
+
+
+.features {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature {
+  flex: 1 1 300px;
+  background: white;
+  padding: 1rem;
+  border-left: 5px solid var(--green-light);
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery .photos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.cta {
+  text-align: center;
+  background: var(--green-light);
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.cta .btn {
+  background: var(--green-dark);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 1rem;
+  transition: background 0.3s;
+}
+
+.cta .btn:hover {
+  background: #013717;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.services-list ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.services-list li {
+  background: white;
+  padding: 1rem;
+  border-left: 4px solid var(--green-light);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.services-list li:hover {
+  transform: translateY(-5px);
+}
+
+.office-card {
+  background: #fff;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-right: 5px solid var(--green-dark);
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+.office-card:hover {
+  transform: translateY(-4px);
+}
+.office-card h4 {
+  color: var(--green-dark);
+  margin-bottom: 0.5rem;
+}
+.office-card ul {
+  padding: 0;
+  list-style: disc inside;
+}
+
+.issues-list {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.issues-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.issues-list li {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid var(--green-light);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.issues-list li:hover {
+  transform: translateY(-3px);
+}
+
+.call-out {
+  background: var(--green-light);
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 6px;
+  text-align: center;
+}
+table th,td{
+  text-align: center;
+  padding:20px;
+}
+.map {
+  margin-top:20px;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.map img{
+  width:400px;
+}

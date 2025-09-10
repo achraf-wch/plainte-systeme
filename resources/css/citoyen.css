@@ -1,0 +1,15 @@
+
+
+.citoyenDivForm{
+background-color: green;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+.citoyenForm{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    background-color: aquamarine;
+
+}
